@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slider {
+        overflow: hidden;
+      }
+      .slider-wrapper {
+        display: flex;
+        overflow: visible;
+        align-items: center;
+        transition: scroll 20s linear;
+      }
+      .slider .slider-element {
+        cursor: grab;
+        padding: 0 10px;
+      }
+      .slider .slider-element .card {
+        width: 200px;
+        height: 200px;
+        background-color: #333;
+      }
+
+      .slide {
+        animation: SlideLeft 10s linear;
+      }
+
+      .pause-animation {
+        animation-play-state: paused;
+      }
+
+      @keyframes SlideLeft {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="slider">
+        <div class="slider-wrapper">
+          <div class="slider-element slide">
+            <div
+              class="card"
+              style="background-color: rgb(237, 220, 124)"
+            ></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(52, 240, 225)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(206, 16, 13)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(44, 119, 169)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div
+              class="card"
+              style="background-color: rgb(112, 200, 223)"
+            ></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(185, 136, 61)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(67, 44, 135)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(185, 173, 56)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(228, 184, 44)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(121, 81, 29)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(34, 64, 143)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(213, 91, 90)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(67, 61, 132)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div
+              class="card"
+              style="background-color: rgb(208, 176, 198)"
+            ></div>
+          </div>
+          <div class="slider-element slide">
+            <div
+              class="card"
+              style="background-color: rgb(230, 179, 210)"
+            ></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(33, 210, 155)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(19, 120, 56)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(14, 74, 1)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(97, 126, 181)"></div>
+          </div>
+          <div class="slider-element slide">
+            <div class="card" style="background-color: rgb(91, 92, 156)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        computed: {
+          colors() {
+            const colors = [];
+            for (let i = 0; i < 20; i++) {
+              const r = Math.floor(Math.random() * 255);
+              const g = Math.floor(Math.random() * 255);
+              const b = Math.floor(Math.random() * 255);
+              const color = colors.push(`rgb(${r},${g}, ${b})`);
+            }
+            return colors;
+          },
+        },
+      });
+    </script> -->
+    <script src="silde.js"></script>
+  </body>
+</html>
